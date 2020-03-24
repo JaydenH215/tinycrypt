@@ -94,8 +94,7 @@ int tc_cbc_mode_decrypt(uint8_t *out, unsigned int outlen, const uint8_t *in,
         (inlen % TC_AES_BLOCK_SIZE) != 0 ||
         (outlen % TC_AES_BLOCK_SIZE) != 0 ||
         // outlen != inlen - TC_AES_BLOCK_SIZE) {
-        outlen != inlen)
-    {
+        outlen != inlen) {
         return TC_CRYPTO_FAIL;
     }
 
